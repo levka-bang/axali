@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <div id="cookieConsent" class="cookie-consent">
+  <div class="consent-content">
+    <div class="consent-image">
+      <img src="ფოტოები/namcxvari.jpg" alt="Cookie consent">
+    </div>
+    <div class="consent-text">
+      <h4>Cookie Settings</h4>
+      <p>Do you agree to our Cookie Settings</p>
+      <div class="consent-buttons">
+        <button id="declineCookies" class="btn decline">Decline</button>
+        <button id="acceptCookies" class="btn accept">Accept</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="beqgraundi_parolis"></div>
+
+
+  <div id="splash">
+    <img src="ფოტოები/mgoniesajobia.gif" alt="Loading animation">
+  </div>
+
+  <div id="login">
+    <form id="form-login" class="login-form" action="dashboard.html" method="POST">
+      <h2>Login</h2>
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="you@example.com"
+      />
+
+      <label for="password">Password</label>
+      <div class="password-wrapper">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="••••••••"
+        />
+        <button
+          type="button"
+          id="togglePassword"
+          class="toggle-password"
+          aria-label="Show or hide password"
+        >
+          <img src="ფოტოები/paroli.png" alt="show or hide password"/>
+        </button>
+      </div>
+
+      <div class="remember">
+        <input type="checkbox" id="save" />
+        <label for="save">Remember me</label>
+      </div>
+
+      <button type="submit">Sign In</button>
+      <p class="register">
+        Don't have an account?
+        <a href="registracia.html">Register here</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="password_show.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script src="cookiechaiweros.js"></script>
+  <script src="cookielogin.js"></script>
+
+</body>
+</html>

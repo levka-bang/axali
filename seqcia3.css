@@ -1,0 +1,71 @@
+.dedamiwa {
+  background: #000;
+  padding: 2rem;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.dedamiwa .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.dedamiwa .header h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.dedamiwa .discover-more {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.overlay .label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #e00;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1rem;
+}

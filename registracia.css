@@ -1,0 +1,89 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100;200;300;400;500;600;700;800;900&family=Intel+One+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #121212;
+  color: #f0f0f0;
+  font-family:
+    "Roboto",
+    "Intel One Mono",
+    "Bitcount Grid Single",
+    sans-serif;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-box {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #2979ff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-box button:hover {
+  background: #1565c0;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #2979ff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

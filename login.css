@@ -1,0 +1,229 @@
+.beqgraundi_parolis {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("ფოტოები/loginis_beqi.gif") no-repeat center center;
+  background-size: cover;
+  z-index: -1; 
+}
+
+
+#splash img {
+  display: block;           
+  width: 100vw;             
+  height: 100vh;            
+  object-fit: cover;        
+}
+
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#splash.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#login {
+  opacity: 0;
+  transition: opacity 0.5s ease 0.3s;
+}
+#login.visible {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #f0f0f0;
+}
+
+.login-form {
+  background: rgba(30,30,30,0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.password-wrapper .toggle-password img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #2979ff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.login-form button[type="submit"]:hover {
+  background: #1565c0;
+}
+
+.login-form .register {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.9rem;
+}
+
+.login-form .register a {
+  color: #2979ff;
+  text-decoration: none;
+}
+
+.login-form .register a:hover {
+  text-decoration: underline;
+}
+
+
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  font-family: sans-serif;
+}
+
+.remember input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.remember label {
+  font-size: 0.9rem;
+  color: #fff;       
+  cursor: pointer;
+}
+
+
+#cookieConsent {
+  position: fixed;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: bottom 0.4s ease;
+  z-index: 10000;
+  font-family: sans-serif;
+}
+
+#cookieConsent.visible {
+  bottom: 1rem;
+}
+
+.consent-content {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.consent-image img {
+  width: 50px;
+  height: auto;
+}
+
+.consent-text h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.consent-text p {
+  margin: 0 0.75rem 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.consent-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.decline {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn.accept {
+  background: #0070f3;
+  color: #fff;
+}
