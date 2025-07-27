@@ -3,7 +3,7 @@ const navMenu   = document.querySelector('.header-right');
 
 burgerBtn.addEventListener('click', () => {
   navMenu.classList.toggle('open');
-  burgerBtn.classList.toggle('open'); // you can animate the icon if you like
+  burgerBtn.classList.toggle('open');
 });
 
 
